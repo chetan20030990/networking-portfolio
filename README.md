@@ -153,37 +153,6 @@ signature = private_key.sign(message, padding.PSS(...))
 
 ---
 
-### 4. 🤖 Network Automation & Monitoring Tools
-**[View Project →](https://github.com/chetan20030990/network-automation-tools)**
-
-<div align="center">
-  <img src="https://img.shields.io/badge/Language-Python-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Protocols-SNMP-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Automation-Paramiko-green?style=for-the-badge" />
-</div>
-
-**Python-based tools for network management, monitoring, and automation**
-
-**🔍 Monitoring Solutions:**
-- Real-time interface status monitoring with SNMP integration
-- Bandwidth utilization tracking with historical data analysis  
-- Automated alerting system for network events and thresholds
-- Performance dashboard with visual metrics and trends
-
-**⚙️ Automation Scripts:**
-- Configuration backup and versioning system
-- Network device discovery and inventory management
-- IP address management and subnet calculation tools
-- Automated configuration deployment and rollback capabilities
-
-**📊 Reporting & Analytics:**
-- Network health reports with SLA compliance metrics
-- Capacity planning analysis with growth projections
-- Security audit reports with vulnerability assessments
-- Custom dashboards for different stakeholder needs
-
----
-
 ## 💼 Professional Experience
 
 ### 🔧 IT Support Volunteer
@@ -312,7 +281,5 @@ signature = private_key.sign(message, padding.PSS(...))
 | [🏢 Enterprise Network](https://github.com/chetan20030990/enterprise-multi-location-network) | Multi-location network design | OSPF, HSRP, VLANs | ✅ Complete |
 | [🔒 Secure Chat App](https://github.com/chetan20030990/secure-chat-application) | Encrypted messaging system | Python, RSA, Sockets | ✅ Complete |  
 | [🐧 Linux Infrastructure](https://github.com/chetan20030990/linux-network-infrastructure) | Network services setup | DNS, DHCP, Apache, NFS | ✅ Complete |
-| [🤖 Automation Tools](https://github.com/chetan20030990/network-automation-tools) | Python network utilities | Python, SNMP, APIs | 🔄 Active |
-| [📖 Learning Resources](https://github.com/chetan20030990/networking-learning-resources) | Study guides and references | Documentation | 🔄 Growing |
 
-*Last Updated: December 2024*
+*Last Updated: June 2025*
