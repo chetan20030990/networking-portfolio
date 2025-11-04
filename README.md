@@ -175,8 +175,8 @@ signature = private_key.sign(message, padding.PSS(...))
 ## 🏆 Certifications & Training
 
 ### 🎯 In Progress
-- **CCNA (Cisco Certified Network Associate)** - Expected completion: March 2025
-- **CompTIA Network+** - Expected completion: April 2025
+- **CCNA (Cisco Certified Network Associate)** - Expected completion: December 2025
+- **CompTIA Network+** - Expected completion: December 2025
 
 ### ✅ Completed Training
 - **Linux System Administration** - Advanced command line and server management
