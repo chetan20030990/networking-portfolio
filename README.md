@@ -1,14 +1,14 @@
 # Chetan Pavan Sai Nannapaneni - Network Engineering Portfolio
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=00D4FF&center=true&vCenter=true&width=800&lines=Network+Engineering+Portfolio;Telecommunications+%26+Security+Expert;Enterprise+Network+Designer;Python+Automation+Specialist" alt="Portfolio Header" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=00D4FF&center=true&vCenter=true&width=800&lines=Network+Engineering+Portfolio;Telecommunications+%26+Cloud+Infrastructure;Enterprise+Network+Designer;AWS+%26+Infrastructure+as+Code" alt="Portfolio Header" />
 </div>
 
 ---
 
 ## 👨‍💻 About Me
 
-**Graduate Student in Telecommunications Networks** with expertise in designing scalable enterprise networks, implementing robust security systems, and developing network automation solutions. Currently pursuing MS at Northeastern University with a perfect 4.0 GPA.
+**Graduate Student in Telecommunications Networks** with expertise in designing scalable enterprise networks, implementing cloud infrastructure, and developing network automation solutions. Currently pursuing MS at Northeastern University with a perfect 4.0 GPA.
 
 <div align="center">
 
@@ -26,7 +26,7 @@
 
 **Master of Science in Telecommunication Networks** | *Expected May 2026*  
 **Northeastern University, Boston, MA** | **GPA: 4.0/4.0**  
-*Relevant Courses: Data Networking, Linux/UNIX Systems Management, Internet Protocols/Architecture*
+*Relevant Courses: Data Networking, Linux/UNIX Systems Management, Internet Protocols/Architecture, Infrastructure Automation*
 
 **Bachelor of Technology in Electronics and Communication Engineering** | *June 2024*  
 **Indian Institute of Space Science and Technology, Thiruvananthapuram**  
@@ -44,19 +44,81 @@
 🏗️ Architecture: Hierarchical Network Design, High Availability, Redundancy Planning
 ```
 
+### Cloud & Infrastructure as Code
+```
+☁️ AWS: EC2, RDS, VPC, ALB, Auto Scaling Groups, CloudWatch, NAT Gateway
+🔧 IaC Tools: Terraform (Modular Design), Ansible (Roles & Playbooks)
+🐳 DevOps: Infrastructure Automation, Configuration Management, Load Testing
+📊 Monitoring: CloudWatch Alarms, Auto-Scaling Policies, Health Checks
+```
+
 ### Tools & Platforms
 ```
 🔧 Network Tools: Cisco Packet Tracer, Wireshark, Keysight ADS, E-CAD
-💻 Programming: Python, MATLAB, Shell Scripting
-🐧 Systems: Linux/UNIX, Windows Server, Apache, Bind9, ISC DHCP
-⚡ Automation: Paramiko, Network APIs, Cron Jobs, Configuration Management
+💻 Programming: Python, MATLAB, Bash, Shell Scripting
+🐧 Systems: Linux/UNIX, Windows Server, Apache, Nginx, Bind9, ISC DHCP
+⚡ Automation: Paramiko, Network APIs, Cron Jobs, Gunicorn, Systemd
 ```
 
 ---
 
 ## 🚀 Featured Projects
 
-### 1. 🌐 Enterprise Multi-Location Network Architecture
+### 1. ☁️ Multi-Tier AWS Application with Infrastructure as Code
+**[View Project →](https://github.com/chetan20030990/aws-three-tier-application)**
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/AWS-Cloud-orange?style=for-the-badge&logo=amazon-aws" />
+  <img src="https://img.shields.io/badge/Terraform-IaC-purple?style=for-the-badge&logo=terraform" />
+  <img src="https://img.shields.io/badge/Ansible-Automation-red?style=for-the-badge&logo=ansible" />
+</div>
+
+**Production-grade three-tier web application on AWS with auto-scaling capabilities**
+
+**🎯 Key Achievements:**
+- Designed and deployed a complete three-tier architecture (Nginx → Flask → RDS MySQL) on AWS
+- Implemented Auto Scaling Groups that successfully scaled from 2 to 4 instances under load
+- Created modular Terraform code with 5 modules provisioning 30 AWS resources
+- Configured Ansible roles for automated application deployment across private instances
+
+**🏗️ Architecture Components:**
+```
+┌─────────────────────────────────────────────────────────────┐
+│                          VPC                                │
+│  ┌────────────────────┐    ┌────────────────────┐          │
+│  │   Public Subnets   │    │   Private Subnets  │          │
+│  │  ┌──────────────┐  │    │  ┌──────────────┐  │          │
+│  │  │    Nginx     │  │    │  │  Flask ASG   │  │          │
+│  │  │  (Frontend)  │  │    │  │  (2-6 inst)  │  │          │
+│  │  └──────────────┘  │    │  └──────────────┘  │          │
+│  │  ┌──────────────┐  │    │  ┌──────────────┐  │          │
+│  │  │     ALB      │  │    │  │  RDS MySQL   │  │          │
+│  │  └──────────────┘  │    │  └──────────────┘  │          │
+│  └────────────────────┘    └────────────────────┘          │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**⚙️ Technical Implementation:**
+- **Terraform Modules:** networking, alb, asg, rds, frontend
+- **Auto-Scaling:** CPU-based policies (>50% scale-out, <30% scale-in)
+- **Security:** Private subnets for app/db, NAT Gateway for outbound, Security Group isolation
+- **Ansible Roles:** Flask deployment with Gunicorn, systemd service management, database initialization
+
+**📊 Load Testing Results:**
+| Metric | Result |
+|--------|--------|
+| Total Requests | 50,000 |
+| Success Rate | 95%+ |
+| Scale Events | 2 → 4 instances |
+| Alarm Response | <10 seconds |
+
+**🔧 Technologies Used:**
+`AWS` `Terraform` `Ansible` `Python` `Flask` `MySQL` `Nginx` `Gunicorn` `CloudWatch`
+
+---
+
+### 2. 🌐 Enterprise Multi-Location Network Architecture
 **[View Project →](https://github.com/chetan20030990/enterprise-multi-location-network)**
 
 <div align="center">
@@ -82,43 +144,12 @@
 - **Services:** Centralized DHCP/DNS, automated IP assignment across all locations
 
 **📊 Performance Results:**
-- Network convergence: 15 seconds (target: <30s)
-- HSRP failover: 2 seconds (target: <3s) 
-- Inter-site latency: 45ms (target: <100ms)
-- Packet loss: 0.02% (target: <0.1%)
-
----
-
-### 2. 🔒 Secure End-to-End Encrypted Chat Application  
-**[View Project →](https://github.com/chetan20030990/secure-chat-application)**
-
-<div align="center">
-  <img src="https://img.shields.io/badge/Encryption-RSA_2048--bit-red?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Language-Python-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Security-Digital_Signatures-purple?style=for-the-badge" />
-</div>
-
-**Real-time encrypted messaging with military-grade security features**
-
-**🛡️ Security Features:**
-- RSA 2048-bit encryption with OAEP padding for message confidentiality
-- Digital signatures using PSS padding for authentication and integrity
-- SHA-256 hashing for message verification and tamper detection
-- Automatic key erasure after session termination for forward secrecy
-
-**🏗️ Architecture:**
-- Multi-threaded client-server model using Python sockets
-- Secure public key exchange protocol with certificate validation
-- Real-time message encryption/decryption with minimal latency
-- Error handling and session management for robust communication
-
-**💻 Code Highlights:**
-```python
-# RSA Key Generation & Secure Encryption
-private_key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
-encrypted_message = peer_public_key.encrypt(message, padding.OAEP(...))
-signature = private_key.sign(message, padding.PSS(...))
-```
+| Metric | Result | Target |
+|--------|--------|--------|
+| Network Convergence | 15 seconds | <30s |
+| HSRP Failover | 2 seconds | <3s |
+| Inter-site Latency | 45ms | <100ms |
+| Packet Loss | 0.02% | <0.1% |
 
 ---
 
@@ -153,6 +184,39 @@ signature = private_key.sign(message, padding.PSS(...))
 
 ---
 
+### 4. 🔒 Secure End-to-End Encrypted Chat Application  
+**[View Project →](https://github.com/chetan20030990/secure-chat-application)**
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Encryption-RSA_2048--bit-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Language-Python-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Security-Digital_Signatures-purple?style=for-the-badge" />
+</div>
+
+**Real-time encrypted messaging with military-grade security features**
+
+**🛡️ Security Features:**
+- RSA 2048-bit encryption with OAEP padding for message confidentiality
+- Digital signatures using PSS padding for authentication and integrity
+- SHA-256 hashing for message verification and tamper detection
+- Automatic key erasure after session termination for forward secrecy
+
+**🏗️ Architecture:**
+- Multi-threaded client-server model using Python sockets
+- Secure public key exchange protocol with certificate validation
+- Real-time message encryption/decryption with minimal latency
+- Error handling and session management for robust communication
+
+**💻 Code Highlights:**
+```python
+# RSA Key Generation & Secure Encryption
+private_key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
+encrypted_message = peer_public_key.encrypt(message, padding.OAEP(...))
+signature = private_key.sign(message, padding.PSS(...))
+```
+
+---
+
 ## 💼 Professional Experience
 
 ### 🔧 IT Support Volunteer
@@ -183,6 +247,7 @@ signature = private_key.sign(message, padding.PSS(...))
 - **Network Security Fundamentals** - Firewalls, VPNs, and intrusion detection
 - **Python for Network Automation** - Scripting for network device management
 - **Wireshark Network Analysis** - Packet capture and protocol analysis
+- **AWS Cloud Fundamentals** - EC2, VPC, RDS, Load Balancing, Auto Scaling
 
 ---
 
@@ -192,6 +257,7 @@ signature = private_key.sign(message, padding.PSS(...))
 
 | Project Category | Total Projects | Technologies Used | Impact Metrics |
 |------------------|----------------|-------------------|----------------|
+| **Cloud Infrastructure** | 1 | AWS, Terraform, Ansible | 30 resources, auto-scaling |
 | **Enterprise Networks** | 3 | OSPF, HSRP, VLANs, ACLs | 74 devices, 5 locations |
 | **Security Systems** | 2 | RSA, IPSec, Firewalls | 99.9% security uptime |
 | **Automation Tools** | 4 | Python, SNMP, APIs | 60% time savings |
@@ -201,38 +267,22 @@ signature = private_key.sign(message, padding.PSS(...))
 
 ---
 
-## 🎨 Technical Demonstrations
-
-### 📹 Project Demos & Walkthroughs
-- **Network Topology Simulations** - Interactive Packet Tracer demonstrations
-- **Security Testing Videos** - Live penetration testing and vulnerability assessment
-- **Automation Script Demos** - Python tools for network management in action
-- **Configuration Tutorials** - Step-by-step implementation guides
-
-### 📊 Interactive Network Tools
-- **IP Subnet Calculator** - Custom Python tool for network planning
-- **Network Performance Analyzer** - Real-time monitoring dashboard
-- **Configuration Generator** - Automated device configuration creation
-- **Security Assessment Tool** - Vulnerability scanning and reporting
-
----
-
 ## 🌟 Why Choose Me?
 
 ### 🎯 Proven Track Record
 - **4.0 GPA** demonstrating academic excellence and dedication
 - **Grade A projects** showcasing real-world application of networking concepts
-- **Hands-on experience** with enterprise-grade network equipment and protocols
+- **Hands-on experience** with enterprise-grade network equipment and cloud infrastructure
 
 ### 🚀 Innovation & Problem-Solving
 - Designed cost-effective solutions saving 15% on infrastructure budgets
 - Implemented automation reducing manual configuration time by 60%
-- Created security systems preventing 100% of unauthorized access attempts
+- Built auto-scaling infrastructure handling 50,000+ concurrent requests
 
-### 📈 Continuous Learning
-- Actively pursuing industry certifications (CCNA, Network+)
-- Contributing to open-source networking projects
-- Staying current with emerging technologies and best practices
+### ☁️ Cloud & Modern Infrastructure
+- Proficient in Infrastructure as Code with Terraform and Ansible
+- Experience designing highly available, fault-tolerant AWS architectures
+- Understanding of DevOps practices and configuration management
 
 ### 🤝 Team Collaboration
 - Successfully worked in team environments on complex projects
@@ -249,14 +299,14 @@ signature = private_key.sign(message, padding.PSS(...))
 
 **Interested in roles involving:**
 - Enterprise network design and implementation
+- Cloud networking and AWS infrastructure
+- Network automation and Infrastructure as Code
 - Network security and penetration testing  
-- Network automation and DevOps integration
 - Telecommunications infrastructure management
-- Cloud networking and hybrid architectures
 
 **Available for:**
 - Full-time positions starting May 2026
-- Internships and co-op opportunities
+- Internships and co-op opportunities (Spring 2026)
 - Contract and consulting projects
 - Technical mentoring and knowledge sharing
 
@@ -267,7 +317,7 @@ signature = private_key.sign(message, padding.PSS(...))
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=chetan20030990&label=Portfolio%20Views&color=0e75b6&style=for-the-badge" alt="Portfolio Views" />
   
-  **⭐ Building the secure, connected infrastructure of tomorrow ⭐**
+  **⭐ Building secure, scalable infrastructure — from enterprise networks to cloud ⭐**
   
   *"Passionate about creating robust, scalable networks that enable digital transformation while maintaining the highest security standards."*
 </div>
@@ -278,8 +328,9 @@ signature = private_key.sign(message, padding.PSS(...))
 
 | Repository | Description | Technologies | Status |
 |------------|-------------|--------------|--------|
+| [☁️ AWS Three-Tier App](https://github.com/chetan20030990/aws-three-tier-application) | Auto-scaling cloud infrastructure | AWS, Terraform, Ansible | ✅ Complete |
 | [🏢 Enterprise Network](https://github.com/chetan20030990/enterprise-multi-location-network) | Multi-location network design | OSPF, HSRP, VLANs | ✅ Complete |
-| [🔒 Secure Chat App](https://github.com/chetan20030990/secure-chat-application) | Encrypted messaging system | Python, RSA, Sockets | ✅ Complete |  
 | [🐧 Linux Infrastructure](https://github.com/chetan20030990/linux-network-infrastructure) | Network services setup | DNS, DHCP, Apache, NFS | ✅ Complete |
+| [🔒 Secure Chat App](https://github.com/chetan20030990/secure-chat-application) | Encrypted messaging system | Python, RSA, Sockets | ✅ Complete |
 
-*Last Updated: June 2025*
+*Last Updated: December 2025*
