@@ -65,7 +65,7 @@
 ## 🚀 Featured Projects
 
 ### 1. ☁️ Multi-Tier AWS Application with Infrastructure as Code
-**[View Project →](https://github.com/chetan20030990/aws-three-tier-application)**
+**[View Project →](https://github.com/chetan20030990/aws-three-tier-terraform-ansible)**
 
 <div align="center">
   <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" />
