@@ -62,6 +62,57 @@
 
 ---
 
+## 💼 Professional Experience
+
+### 🎓 Teaching Assistant – TELE 6420 Infrastructure Automation
+**Northeastern University, Boston, MA** | *January 2026 - Present*
+
+- Assist students with Terraform, Ansible, and AWS infrastructure concepts; grade assignments and provide technical guidance on automation projects
+- Hold office hours to help students debug infrastructure code and understand configuration management principles
+- Collaborate with professor to update lab materials and create documentation for cloud deployment exercises
+
+**Key Contributions:**
+- Mentored 30+ students in implementing Infrastructure as Code best practices
+- Developed supplementary learning resources for complex Terraform module concepts
+- Provided hands-on support for AWS deployment troubleshooting and Ansible playbook debugging
+
+---
+
+### 🔧 IT Support Volunteer
+**Indian Institute of Space Science and Technology** | *August 2023 - April 2024*
+
+- Provided comprehensive technical support for 500+ students and faculty members
+- Troubleshot complex hardware, software, and network connectivity issues
+- Configured university-approved software packages and VPN solutions on Windows/Linux
+- Upgraded legacy PC systems with Windows 10 to extend hardware lifespan by 3+ years
+- Maintained 99% uptime for critical university technology infrastructure
+
+**Key Achievements:**
+- Reduced average issue resolution time by 40% through systematic troubleshooting
+- Implemented preventive maintenance procedures reducing hardware failures by 25%
+- Created documentation and training materials for common technical issues
+- Collaborated with IT team to improve network security and performance
+
+---
+
+## 🏆 Certifications
+
+### ✅ Completed
+- **Cisco Certified Network Associate (CCNA 200-301)** - January 2026
+  - Cisco ID: CSCO14883491 | Valid through January 2029 | [Verify](https://www.credly.com/)
+
+### 🎯 In Progress
+- **CompTIA Network+** - Expected March 2026
+
+### ✅ Completed Training
+- **Linux System Administration** - Advanced command line and server management
+- **Network Security Fundamentals** - Firewalls, VPNs, and intrusion detection
+- **Python for Network Automation** - Scripting for network device management
+- **Wireshark Network Analysis** - Packet capture and protocol analysis
+- **AWS Cloud Fundamentals** - EC2, VPC, RDS, Load Balancing, Auto Scaling
+
+---
+
 ## 🚀 Featured Projects
 
 ### 1. ☁️ Multi-Tier AWS Application with Infrastructure as Code
@@ -217,40 +268,6 @@ signature = private_key.sign(message, padding.PSS(...))
 
 ---
 
-## 💼 Professional Experience
-
-### 🔧 IT Support Volunteer
-**Indian Institute of Space Science and Technology** | *August 2023 - April 2024*
-
-- Provided comprehensive technical support for 500+ students and faculty members
-- Troubleshot complex hardware, software, and network connectivity issues
-- Configured university-approved software packages and VPN solutions on Windows/Linux
-- Upgraded legacy PC systems with Windows 10 to extend hardware lifespan by 3+ years
-- Maintained 99% uptime for critical university technology infrastructure
-
-**Key Achievements:**
-- Reduced average issue resolution time by 40% through systematic troubleshooting
-- Implemented preventive maintenance procedures reducing hardware failures by 25%
-- Created documentation and training materials for common technical issues
-- Collaborated with IT team to improve network security and performance
-
----
-
-## 🏆 Certifications & Training
-
-### 🎯 In Progress
-- **CCNA (Cisco Certified Network Associate)** - Expected completion: December 2025
-- **CompTIA Network+** - Expected completion: December 2025
-
-### ✅ Completed Training
-- **Linux System Administration** - Advanced command line and server management
-- **Network Security Fundamentals** - Firewalls, VPNs, and intrusion detection
-- **Python for Network Automation** - Scripting for network device management
-- **Wireshark Network Analysis** - Packet capture and protocol analysis
-- **AWS Cloud Fundamentals** - EC2, VPC, RDS, Load Balancing, Auto Scaling
-
----
-
 ## 📊 Project Statistics & Impact
 
 <div align="center">
@@ -271,6 +288,7 @@ signature = private_key.sign(message, padding.PSS(...))
 
 ### 🎯 Proven Track Record
 - **4.0 GPA** demonstrating academic excellence and dedication
+- **CCNA Certified** with validated networking expertise
 - **Grade A projects** showcasing real-world application of networking concepts
 - **Hands-on experience** with enterprise-grade network equipment and cloud infrastructure
 
@@ -284,7 +302,8 @@ signature = private_key.sign(message, padding.PSS(...))
 - Experience designing highly available, fault-tolerant AWS architectures
 - Understanding of DevOps practices and configuration management
 
-### 🤝 Team Collaboration
+### 🤝 Team Collaboration & Teaching
+- Currently serving as Teaching Assistant for Infrastructure Automation course
 - Successfully worked in team environments on complex projects
 - Mentored fellow students in networking concepts and troubleshooting
 - Excellent communication skills for technical and non-technical stakeholders
@@ -333,4 +352,4 @@ signature = private_key.sign(message, padding.PSS(...))
 | [🐧 Linux Infrastructure](https://github.com/chetan20030990/linux-network-infrastructure) | Network services setup | DNS, DHCP, Apache, NFS | ✅ Complete |
 | [🔒 Secure Chat App](https://github.com/chetan20030990/secure-chat-application) | Encrypted messaging system | Python, RSA, Sockets | ✅ Complete |
 
-*Last Updated: December 2025*
+*Last Updated: January 2026*
