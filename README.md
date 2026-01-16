@@ -6,13 +6,13 @@
 
 ---
 
-## 👨‍💻 About Me
+## About Me
 
-**Graduate Student in Telecommunications Networks** with expertise in designing scalable enterprise networks, implementing cloud infrastructure, and developing network automation solutions. Currently pursuing MS at Northeastern University with a perfect 4.0 GPA.
+**Graduate Student in Telecommunications Networks** with expertise in designing scalable enterprise networks, implementing cloud infrastructure, and developing network automation solutions. Currently pursuing MS at Northeastern University with a 3.95 GPA.
 
 <div align="center">
 
-**📍 Boston, MA | 📞 (857) 565-4795 | 📧 nannapaneni.che@northeastern.edu**
+**Boston, MA | (857) 565-4795 | nannapaneni.che@northeastern.edu**
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/chetannannapaneni/)
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/chetan20030990)
@@ -22,10 +22,10 @@
 
 ---
 
-## 🎓 Education
+## Education
 
 **Master of Science in Telecommunication Networks** | *Expected May 2026*  
-**Northeastern University, Boston, MA** | **GPA: 4.0/4.0**  
+**Northeastern University, Boston, MA** | **GPA: 3.95/4.0**  
 *Relevant Courses: Data Networking, Linux/UNIX Systems Management, Internet Protocols/Architecture, Infrastructure Automation*
 
 **Bachelor of Technology in Electronics and Communication Engineering** | *June 2024*  
@@ -34,37 +34,37 @@
 
 ---
 
-## 🛠️ Technical Skills
+## Technical Skills
 
 ### Networking Protocols & Technologies
 ```
-🌐 Layer 2/3 Protocols: OSPF, EIGRP, HSRP, GLBP, CEF, BGP, STP, VLANs
-🔐 Security: IPSec VPN, Firewalls, SSL/TLS, RSA Encryption, Access Control Lists
-📡 Services: TCP/IP, DNS, HTTP/S, DHCP, ARP, NTP, SNMP
-🏗️ Architecture: Hierarchical Network Design, High Availability, Redundancy Planning
+Layer 2/3 Protocols: OSPF, EIGRP, HSRP, GLBP, CEF, BGP, STP, VLANs
+Security: IPSec VPN, Firewalls, SSL/TLS, RSA Encryption, Access Control Lists
+Services: TCP/IP, DNS, HTTP/S, DHCP, ARP, NTP, SNMP
+Architecture: Hierarchical Network Design, High Availability, Redundancy Planning
 ```
 
 ### Cloud & Infrastructure as Code
 ```
-☁️ AWS: EC2, RDS, VPC, ALB, Auto Scaling Groups, CloudWatch, NAT Gateway
-🔧 IaC Tools: Terraform (Modular Design), Ansible (Roles & Playbooks)
-🐳 DevOps: Infrastructure Automation, Configuration Management, Load Testing
-📊 Monitoring: CloudWatch Alarms, Auto-Scaling Policies, Health Checks
+AWS: EC2, RDS, VPC, ALB, Auto Scaling Groups, CloudWatch, NAT Gateway
+IaC Tools: Terraform (Modular Design), Ansible (Roles & Playbooks)
+DevOps: Infrastructure Automation, Configuration Management, Load Testing
+Monitoring: CloudWatch Alarms, Auto-Scaling Policies, Health Checks
 ```
 
 ### Tools & Platforms
 ```
-🔧 Network Tools: Cisco Packet Tracer, Wireshark, Keysight ADS, E-CAD
-💻 Programming: Python, MATLAB, Bash, Shell Scripting
-🐧 Systems: Linux/UNIX, Windows Server, Apache, Nginx, Bind9, ISC DHCP
-⚡ Automation: Paramiko, Network APIs, Cron Jobs, Gunicorn, Systemd
+Network Tools: Cisco Packet Tracer, Wireshark, Keysight ADS, E-CAD
+Programming: Python, MATLAB, Bash, Shell Scripting
+Systems: Linux/UNIX, Windows Server, Apache, Nginx, Bind9, ISC DHCP
+Automation: Paramiko, Network APIs, Cron Jobs, Gunicorn, Systemd
 ```
 
 ---
 
-## 💼 Professional Experience
+## Professional Experience
 
-### 🎓 Teaching Assistant – TELE 6420 Infrastructure Automation
+### Teaching Assistant – TELE 6420 Infrastructure Automation
 **Northeastern University, Boston, MA** | *January 2026 - Present*
 
 - Assist students with Terraform, Ansible, and AWS infrastructure concepts; grade assignments and provide technical guidance on automation projects
@@ -78,7 +78,7 @@
 
 ---
 
-### 🔧 IT Support Volunteer
+### IT Support Volunteer
 **Indian Institute of Space Science and Technology** | *August 2023 - April 2024*
 
 - Provided comprehensive technical support for 500+ students and faculty members
@@ -95,16 +95,16 @@
 
 ---
 
-## 🏆 Certifications
+## Certifications
 
-### ✅ Completed
+### Completed
 - **Cisco Certified Network Associate (CCNA 200-301)** - January 2026
   - Cisco ID: CSCO14883491 | Valid through January 2029 | [Verify](https://www.credly.com/)
 
-### 🎯 In Progress
+### In Progress
 - **CompTIA Network+** - Expected March 2026
 
-### ✅ Completed Training
+### Completed Training
 - **Linux System Administration** - Advanced command line and server management
 - **Network Security Fundamentals** - Firewalls, VPNs, and intrusion detection
 - **Python for Network Automation** - Scripting for network device management
@@ -113,10 +113,10 @@
 
 ---
 
-## 🚀 Featured Projects
+## Featured Projects
 
-### 1. ☁️ Multi-Tier AWS Application with Infrastructure as Code
-**[View Project →](https://github.com/chetan20030990/aws-three-tier-terraform-ansible)**
+### 1. Multi-Tier AWS Application with Infrastructure as Code
+**[View Project](https://github.com/chetan20030990/aws-three-tier-terraform-ansible)**
 
 <div align="center">
   <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" />
@@ -127,13 +127,13 @@
 
 **Production-grade three-tier web application on AWS with auto-scaling capabilities**
 
-**🎯 Key Achievements:**
-- Designed and deployed a complete three-tier architecture (Nginx → Flask → RDS MySQL) on AWS
+**Key Achievements:**
+- Designed and deployed a complete three-tier architecture (Nginx, Flask, RDS MySQL) on AWS
 - Implemented Auto Scaling Groups that successfully scaled from 2 to 4 instances under load
 - Created modular Terraform code with 5 modules provisioning 30 AWS resources
 - Configured Ansible roles for automated application deployment across private instances
 
-**🏗️ Architecture Components:**
+**Architecture Components:**
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                          VPC                                │
@@ -150,27 +150,27 @@
 └─────────────────────────────────────────────────────────────┘
 ```
 
-**⚙️ Technical Implementation:**
+**Technical Implementation:**
 - **Terraform Modules:** networking, alb, asg, rds, frontend
 - **Auto-Scaling:** CPU-based policies (>50% scale-out, <30% scale-in)
 - **Security:** Private subnets for app/db, NAT Gateway for outbound, Security Group isolation
 - **Ansible Roles:** Flask deployment with Gunicorn, systemd service management, database initialization
 
-**📊 Load Testing Results:**
+**Load Testing Results:**
 | Metric | Result |
 |--------|--------|
 | Total Requests | 50,000 |
 | Success Rate | 95%+ |
-| Scale Events | 2 → 4 instances |
+| Scale Events | 2 to 4 instances |
 | Alarm Response | <10 seconds |
 
-**🔧 Technologies Used:**
+**Technologies Used:**
 `AWS` `Terraform` `Ansible` `Python` `Flask` `MySQL` `Nginx` `Gunicorn` `CloudWatch`
 
 ---
 
-### 2. 🌐 Enterprise Multi-Location Network Architecture
-**[View Project →](https://github.com/chetan20030990/enterprise-multi-location-network)**
+### 2. Enterprise Multi-Location Network Architecture
+**[View Project](https://github.com/chetan20030990/enterprise-multi-location-network)**
 
 <div align="center">
   <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" />
@@ -181,20 +181,20 @@
 
 **Comprehensive enterprise network design connecting 5 global locations with 74 devices**
 
-**🎯 Key Achievements:**
+**Key Achievements:**
 - Designed scalable network architecture serving Boston, Mumbai, New York, Germany, and London
 - Implemented OSPF multi-area routing with Area 0 backbone for optimal performance  
 - Configured HSRP for 99.9% uptime with automatic failover capabilities
 - Deployed department-based VLANs (HR-10, Tech-20, Finance-30) with security isolation
 - Achieved cost-optimized design totaling $74,470 with strategic equipment selection
 
-**⚙️ Technical Implementation:**
+**Technical Implementation:**
 - **Routing:** OSPF Areas 0-5, EIGRP over GRE tunnels for secure HQ communication
 - **Redundancy:** Primary/standby routers with HSRP, STP for loop prevention
 - **Security:** ACLs preventing unauthorized inter-department access, SSH management
 - **Services:** Centralized DHCP/DNS, automated IP assignment across all locations
 
-**📊 Performance Results:**
+**Performance Results:**
 | Metric | Result | Target |
 |--------|--------|--------|
 | Network Convergence | 15 seconds | <30s |
@@ -204,8 +204,8 @@
 
 ---
 
-### 3. 🐧 Linux Network Infrastructure Implementation
-**[View Project →](https://github.com/chetan20030990/linux-network-infrastructure)**
+### 3. Linux Network Infrastructure Implementation
+**[View Project](https://github.com/chetan20030990/linux-network-infrastructure)**
 
 <div align="center">
   <img src="https://img.shields.io/badge/Platform-Linux-yellow?style=for-the-badge" />
@@ -215,19 +215,19 @@
 
 **Complete network services infrastructure for enterprise startup environment**
 
-**🔧 My Contributions:**
+**My Contributions:**
 - **Backup Automation:** Developed automated backup system with tar/gzip compression, remote transfer, and cron scheduling
 - **Network File System:** Configured NFS for centralized file sharing with proper permission management
 - **Security Testing:** Implemented MITM attack simulation using Python Scapy for vulnerability assessment
 
-**🏢 Infrastructure Services:**
+**Infrastructure Services:**
 - **DNS:** Master-Slave Bind9 configuration with forward/reverse lookup zones
 - **DHCP:** IPv4/IPv6 address assignment with scope management and reservations  
 - **Web Server:** Apache configuration with SSL/TLS encryption and fail2ban security
 - **Firewall:** UFW implementation with custom rules and intrusion prevention
 - **VPN:** IPSec tunnel mode for secure remote access
 
-**🤖 Automation Features:**
+**Automation Features:**
 - Automated configuration backups with timestamp-based naming
 - Performance monitoring scripts with email alerting
 - Security scanning tools for vulnerability detection
@@ -235,8 +235,8 @@
 
 ---
 
-### 4. 🔒 Secure End-to-End Encrypted Chat Application  
-**[View Project →](https://github.com/chetan20030990/secure-chat-application)**
+### 4. Secure End-to-End Encrypted Chat Application  
+**[View Project](https://github.com/chetan20030990/secure-chat-application)**
 
 <div align="center">
   <img src="https://img.shields.io/badge/Encryption-RSA_2048--bit-red?style=for-the-badge" />
@@ -246,19 +246,19 @@
 
 **Real-time encrypted messaging with military-grade security features**
 
-**🛡️ Security Features:**
+**Security Features:**
 - RSA 2048-bit encryption with OAEP padding for message confidentiality
 - Digital signatures using PSS padding for authentication and integrity
 - SHA-256 hashing for message verification and tamper detection
 - Automatic key erasure after session termination for forward secrecy
 
-**🏗️ Architecture:**
+**Architecture:**
 - Multi-threaded client-server model using Python sockets
 - Secure public key exchange protocol with certificate validation
 - Real-time message encryption/decryption with minimal latency
 - Error handling and session management for robust communication
 
-**💻 Code Highlights:**
+**Code Highlights:**
 ```python
 # RSA Key Generation & Secure Encryption
 private_key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
@@ -268,7 +268,7 @@ signature = private_key.sign(message, padding.PSS(...))
 
 ---
 
-## 📊 Project Statistics & Impact
+## Project Statistics & Impact
 
 <div align="center">
 
@@ -284,25 +284,25 @@ signature = private_key.sign(message, padding.PSS(...))
 
 ---
 
-## 🌟 Why Choose Me?
+## Why Choose Me?
 
-### 🎯 Proven Track Record
-- **4.0 GPA** demonstrating academic excellence and dedication
+### Proven Track Record
+- **3.95 GPA** demonstrating academic excellence and dedication
 - **CCNA Certified** with validated networking expertise
 - **Grade A projects** showcasing real-world application of networking concepts
 - **Hands-on experience** with enterprise-grade network equipment and cloud infrastructure
 
-### 🚀 Innovation & Problem-Solving
+### Innovation & Problem-Solving
 - Designed cost-effective solutions saving 15% on infrastructure budgets
 - Implemented automation reducing manual configuration time by 60%
 - Built auto-scaling infrastructure handling 50,000+ concurrent requests
 
-### ☁️ Cloud & Modern Infrastructure
+### Cloud & Modern Infrastructure
 - Proficient in Infrastructure as Code with Terraform and Ansible
 - Experience designing highly available, fault-tolerant AWS architectures
 - Understanding of DevOps practices and configuration management
 
-### 🤝 Team Collaboration & Teaching
+### Team Collaboration & Teaching
 - Currently serving as Teaching Assistant for Infrastructure Automation course
 - Successfully worked in team environments on complex projects
 - Mentored fellow students in networking concepts and troubleshooting
@@ -310,11 +310,11 @@ signature = private_key.sign(message, padding.PSS(...))
 
 ---
 
-## 📞 Let's Connect & Collaborate
+## Let's Connect & Collaborate
 
 <div align="center">
 
-### 🎯 Currently Seeking Network Engineer Opportunities
+### Currently Seeking Network Engineer Opportunities
 
 **Interested in roles involving:**
 - Enterprise network design and implementation
@@ -336,20 +336,20 @@ signature = private_key.sign(message, padding.PSS(...))
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=chetan20030990&label=Portfolio%20Views&color=0e75b6&style=for-the-badge" alt="Portfolio Views" />
   
-  **⭐ Building secure, scalable infrastructure — from enterprise networks to cloud ⭐**
+  **Building secure, scalable infrastructure — from enterprise networks to cloud**
   
   *"Passionate about creating robust, scalable networks that enable digital transformation while maintaining the highest security standards."*
 </div>
 
 ---
 
-## 📚 Repository Navigation
+## Repository Navigation
 
 | Repository | Description | Technologies | Status |
 |------------|-------------|--------------|--------|
-| [☁️ AWS Three-Tier App](https://github.com/chetan20030990/aws-three-tier-application) | Auto-scaling cloud infrastructure | AWS, Terraform, Ansible | ✅ Complete |
-| [🏢 Enterprise Network](https://github.com/chetan20030990/enterprise-multi-location-network) | Multi-location network design | OSPF, HSRP, VLANs | ✅ Complete |
-| [🐧 Linux Infrastructure](https://github.com/chetan20030990/linux-network-infrastructure) | Network services setup | DNS, DHCP, Apache, NFS | ✅ Complete |
-| [🔒 Secure Chat App](https://github.com/chetan20030990/secure-chat-application) | Encrypted messaging system | Python, RSA, Sockets | ✅ Complete |
+| [AWS Three-Tier App](https://github.com/chetan20030990/aws-three-tier-application) | Auto-scaling cloud infrastructure | AWS, Terraform, Ansible | Complete |
+| [Enterprise Network](https://github.com/chetan20030990/enterprise-multi-location-network) | Multi-location network design | OSPF, HSRP, VLANs | Complete |
+| [Linux Infrastructure](https://github.com/chetan20030990/linux-network-infrastructure) | Network services setup | DNS, DHCP, Apache, NFS | Complete |
+| [Secure Chat App](https://github.com/chetan20030990/secure-chat-application) | Encrypted messaging system | Python, RSA, Sockets | Complete |
 
 *Last Updated: January 2026*
