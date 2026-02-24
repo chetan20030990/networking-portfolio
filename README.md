@@ -54,7 +54,7 @@ Monitoring: CloudWatch Alarms, Auto-Scaling Policies, Health Checks
 
 ### Tools & Platforms
 ```
-Network Tools: Cisco Packet Tracer, Wireshark, Keysight ADS, E-CAD
+Network Tools: Cisco Packet Tracer, Wireshark, FRRouting, Keysight ADS, E-CAD
 Programming: Python, MATLAB, Bash, Shell Scripting
 Systems: Linux/UNIX, Windows Server, Apache, Nginx, Bind9, ISC DHCP
 Automation: Paramiko, Network APIs, Cron Jobs, Gunicorn, Systemd
@@ -99,7 +99,7 @@ Automation: Paramiko, Network APIs, Cron Jobs, Gunicorn, Systemd
 
 ### Completed
 - **Cisco Certified Network Associate (CCNA 200-301)** - January 2026
-  - Cisco ID: CSCO14883491 | Valid through January 2029 | [Verify](https://www.credly.com/)
+  - Cisco ID: CSCO14883491 | Valid through January 2029 | [Verify](https://www.credly.com/badges/4c98f5f9-a9d8-4a24-a434-850711fe8be3/public_url)
 
 ### In Progress
 - **CompTIA Network+** - Expected March 2026
@@ -115,7 +115,63 @@ Automation: Paramiko, Network APIs, Cron Jobs, Gunicorn, Systemd
 
 ## Featured Projects
 
-### 1. Multi-Tier AWS Application with Infrastructure as Code
+### 1. Automated BGP/OSPF Network Deployment with Terraform and Ansible
+**[View Project](https://github.com/chetan20030990/bgp-ospf-network-deployment)**
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/AWS-EC2-orange?style=for-the-badge&logo=amazon-aws" />
+  <img src="https://img.shields.io/badge/Protocols-BGP%20%7C%20OSPF-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Routing-FRRouting_8.5.2-green?style=for-the-badge" />
+</div>
+
+**Fully automated BGP/OSPF network on AWS using three EC2 instances as software routers running FRRouting, provisioned entirely with Terraform and Ansible**
+
+**Key Achievements:**
+- Deployed OSPF Area 0 within AS 100 (R1–R2) and eBGP peering between AS 100 and AS 200 (R1–R3) on real AWS infrastructure
+- Provisioned all AWS infrastructure (VPC, subnets, security groups, 3 EC2 instances) using modular Terraform with 3 child modules
+- Automated router configuration using Ansible roles (base, ospf, bgp) with Jinja2 templates; resolved AWS multicast limitation by configuring OSPF non-broadcast mode with explicit unicast neighbors
+- Built Python verification script using Paramiko to automate OSPF/BGP state checks, routing table validation, and ping reachability across all routers
+- Demonstrated link failure simulation with full OSPF and BGP reconvergence within 40 seconds
+
+**Network Topology:**
+```
+AS 100                                  AS 200
+┌──────────────────────────┐            ┌──────────────┐
+│                          │            │              │
+│  R1 (10.0.1.8)  ─────────────────────  R3 (10.0.2.5) │
+│        |          eBGP   │            │              │
+│   OSPF Area 0            │            └──────────────┘
+│        |                 │
+│  R2 (10.0.1.13)          │
+│                          │
+└──────────────────────────┘
+
+Subnet A: 10.0.1.0/28  (R1–R2 OSPF link)
+Subnet B: 10.0.2.0/28  (R1–R3 eBGP link)
+VPC:      10.0.0.0/16
+```
+
+**Verification Results:**
+| Router | OSPF State | BGP State | Ping |
+|--------|-----------|-----------|------|
+| R1 | Full/DR with R2 | Established with R3 | Pass |
+| R2 | Full/Backup with R1 | N/A | Pass |
+| R3 | N/A | Established with R1 | Pass |
+
+**Failure Simulation:**
+| State | OSPF (R1–R2) | BGP (R1–R3) |
+|-------|-------------|-------------|
+| Before | Full/DR — Full/Backup | Established, prefixes exchanged |
+| During | No neighbors (adjacency lost) | Connect state, route withdrawn |
+| After | Full/DR — Full/Backup restored | Re-established, route re-advertised |
+
+**Technologies Used:**
+`AWS` `Terraform` `Ansible` `FRRouting` `OSPF` `BGP` `Python` `Paramiko` `Amazon Linux 2`
+
+---
+
+### 2. Multi-Tier AWS Application with Infrastructure as Code
 **[View Project](https://github.com/chetan20030990/aws-three-tier-terraform-ansible)**
 
 <div align="center">
@@ -169,7 +225,7 @@ Automation: Paramiko, Network APIs, Cron Jobs, Gunicorn, Systemd
 
 ---
 
-### 2. Enterprise Multi-Location Network Architecture
+### 3. Enterprise Multi-Location Network Architecture
 **[View Project](https://github.com/chetan20030990/enterprise-multi-location-network)**
 
 <div align="center">
@@ -183,7 +239,7 @@ Automation: Paramiko, Network APIs, Cron Jobs, Gunicorn, Systemd
 
 **Key Achievements:**
 - Designed scalable network architecture serving Boston, Mumbai, New York, Germany, and London
-- Implemented OSPF multi-area routing with Area 0 backbone for optimal performance  
+- Implemented OSPF multi-area routing with Area 0 backbone for optimal performance
 - Configured HSRP for 99.9% uptime with automatic failover capabilities
 - Deployed department-based VLANs (HR-10, Tech-20, Finance-30) with security isolation
 - Achieved cost-optimized design totaling $74,470 with strategic equipment selection
@@ -204,7 +260,7 @@ Automation: Paramiko, Network APIs, Cron Jobs, Gunicorn, Systemd
 
 ---
 
-### 3. Linux Network Infrastructure Implementation
+### 4. Linux Network Infrastructure Implementation
 **[View Project](https://github.com/chetan20030990/linux-network-infrastructure)**
 
 <div align="center">
@@ -222,7 +278,7 @@ Automation: Paramiko, Network APIs, Cron Jobs, Gunicorn, Systemd
 
 **Infrastructure Services:**
 - **DNS:** Master-Slave Bind9 configuration with forward/reverse lookup zones
-- **DHCP:** IPv4/IPv6 address assignment with scope management and reservations  
+- **DHCP:** IPv4/IPv6 address assignment with scope management and reservations
 - **Web Server:** Apache configuration with SSL/TLS encryption and fail2ban security
 - **Firewall:** UFW implementation with custom rules and intrusion prevention
 - **VPN:** IPSec tunnel mode for secure remote access
@@ -235,7 +291,7 @@ Automation: Paramiko, Network APIs, Cron Jobs, Gunicorn, Systemd
 
 ---
 
-### 4. Secure End-to-End Encrypted Chat Application  
+### 5. Secure End-to-End Encrypted Chat Application
 **[View Project](https://github.com/chetan20030990/secure-chat-application)**
 
 <div align="center">
@@ -275,6 +331,7 @@ signature = private_key.sign(message, padding.PSS(...))
 | Project Category | Total Projects | Technologies Used | Impact Metrics |
 |------------------|----------------|-------------------|----------------|
 | **Cloud Infrastructure** | 1 | AWS, Terraform, Ansible | 30 resources, auto-scaling |
+| **Routing Protocol Automation** | 1 | BGP, OSPF, FRRouting, Terraform, Ansible | 3 routers, 2 AS, full IaC |
 | **Enterprise Networks** | 3 | OSPF, HSRP, VLANs, ACLs | 74 devices, 5 locations |
 | **Security Systems** | 2 | RSA, IPSec, Firewalls | 99.9% security uptime |
 | **Automation Tools** | 4 | Python, SNMP, APIs | 60% time savings |
@@ -296,11 +353,13 @@ signature = private_key.sign(message, padding.PSS(...))
 - Designed cost-effective solutions saving 15% on infrastructure budgets
 - Implemented automation reducing manual configuration time by 60%
 - Built auto-scaling infrastructure handling 50,000+ concurrent requests
+- Deployed real BGP/OSPF routing on AWS, adapting protocol behavior for cloud environments
 
 ### Cloud & Modern Infrastructure
 - Proficient in Infrastructure as Code with Terraform and Ansible
 - Experience designing highly available, fault-tolerant AWS architectures
 - Understanding of DevOps practices and configuration management
+- Hands-on experience running dynamic routing protocols (OSPF, BGP) on AWS EC2
 
 ### Team Collaboration & Teaching
 - Currently serving as Teaching Assistant for Infrastructure Automation course
@@ -320,12 +379,11 @@ signature = private_key.sign(message, padding.PSS(...))
 - Enterprise network design and implementation
 - Cloud networking and AWS infrastructure
 - Network automation and Infrastructure as Code
-- Network security and penetration testing  
+- Network security and penetration testing
 - Telecommunications infrastructure management
 
 **Available for:**
 - Full-time positions starting May 2026
-- Internships and co-op opportunities (Spring 2026)
 - Contract and consulting projects
 - Technical mentoring and knowledge sharing
 
@@ -335,9 +393,9 @@ signature = private_key.sign(message, padding.PSS(...))
 
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=chetan20030990&label=Portfolio%20Views&color=0e75b6&style=for-the-badge" alt="Portfolio Views" />
-  
+
   **Building secure, scalable infrastructure — from enterprise networks to cloud**
-  
+
   *"Passionate about creating robust, scalable networks that enable digital transformation while maintaining the highest security standards."*
 </div>
 
@@ -347,9 +405,10 @@ signature = private_key.sign(message, padding.PSS(...))
 
 | Repository | Description | Technologies | Status |
 |------------|-------------|--------------|--------|
+| [BGP/OSPF Deployment](https://github.com/chetan20030990/bgp-ospf-network-deployment) | Automated routing protocol deployment on AWS | BGP, OSPF, FRRouting, Terraform, Ansible | Complete |
 | [AWS Three-Tier App](https://github.com/chetan20030990/aws-three-tier-application) | Auto-scaling cloud infrastructure | AWS, Terraform, Ansible | Complete |
 | [Enterprise Network](https://github.com/chetan20030990/enterprise-multi-location-network) | Multi-location network design | OSPF, HSRP, VLANs | Complete |
 | [Linux Infrastructure](https://github.com/chetan20030990/linux-network-infrastructure) | Network services setup | DNS, DHCP, Apache, NFS | Complete |
 | [Secure Chat App](https://github.com/chetan20030990/secure-chat-application) | Encrypted messaging system | Python, RSA, Sockets | Complete |
 
-*Last Updated: January 2026*
+*Last Updated: February 2026*
